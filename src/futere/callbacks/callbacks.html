@@ -5,39 +5,42 @@
     <title>Actividad 3: Callbacks</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
-   <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
-       <div class="container">
-        <a class="navbar-brand fw-bold" href="../../../index.html">CRUD Datos</a>
+<body class="bg-dark text-white"> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../../index.html">CRUD Datos</a>
 
-        <div class="navbar-nav ms-auto">
-             <a class="nav-link" href="../../../index.html">Inicio (CRUD)</a>
-            <a class="nav-link active" href="callbacks.html">Callbacks</a>
-            <a class="nav-link" href="../promesas/promesas.html">Promises</a>
-            <a class="nav-link" href="../async/async.html">Async/Await</a>
-            <a class="nav-link" href="../destructuring/destructuring.html">Destructuring</a>
+            <div class="navbar-nav ms-auto">
+                 <a class="nav-link" href="../../../index.html">Inicio</a>
+                 
+                 <a class="nav-link active" href="callbacks.html">Callbacks</a>
+                 <a class="nav-link" href="../promesas/promesas.html">Promises</a>
+                 <a class="nav-link" href="../async/async.html">Async/Await</a>
+                 <a class="nav-link" href="../destructuring/destructuring.html">Destructuring</a>
+            </div>
         </div>
-    </div>
     </nav>
 
     <div class="container">
-        <div class="card-custom">
+        <div class="card-custom p-4 border border-secondary rounded bg-dark">
             <h2>Actividad 3: Callbacks</h2>
             <p class="text-secondary">
-                <strong>Descripción:</strong> Un callback es una función que se pasa a otra función como argumento y que luego se invoca dentro de la función externa para completar algún tipo de rutina o acción.
+                <strong>Descripción:</strong> Un callback es una función que se pasa a otra función como argumento y que luego se invoca para completar una acción.
             </p>
             <hr class="border-secondary">
-            <div class="col-md-6 mx-auto text-center">
+            <div class="col-md-6 mx-auto text-center mt-4">
                 <h5>Buscador de Países</h5>
-                <input type="text" id="pais" class="form-control mb-3" placeholder="Ingresa un país (Ej: Mexico, España)">
+                <input type="text" id="pais" class="form-control mb-3 bg-dark text-white border-secondary" placeholder="Ingresa un país (Ej: Mexico, España)">
                 <button class="btn btn-primary w-100" onclick="ejecutar()">Buscar País</button>
-                <div id="res" class="mt-4 h5"></div>
+                <div id="res" class="mt-4 h5 text-success"></div>
             </div>
         </div>
     </div>
+
     <script src="callbacks.js"></script>
 </body>
 </html>
+
 
