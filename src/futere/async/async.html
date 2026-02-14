@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Actividad 5: Async/Await</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="/index.html">CRUD Datos</a>
+
+        <div class="navbar-nav ms-auto">
+             <a class="nav-link" href="/index.html">Inicio (CRUD)</a>
+            <a class="nav-link" href="/src/futere/callbacks/callbacks.html">Callbacks</a>
+            <a class="nav-link active" href="/src/futere/promesas/promesas.html">Promises</a>
+            <a class="nav-link" href="/src/futere/async/async.html">Async/Await</a>
+            <a class="nav-link" href="/src/futere/destructuring/destructuring.html">Destructuring</a>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-custom">
+            <h2>Actividad 5: Async/Await</h2>
+            <p class="text-secondary">
+                <strong>Descripción:</strong> <code>async</code> y <code>await</code> son palabras clave que permiten escribir código asíncrono de una manera que parece síncrona, facilitando la lectura y el mantenimiento.
+            </p>
+            <hr class="border-secondary">
+            <div class="col-md-6 mx-auto text-center">
+                <h5>Calculador del Doble (2 seg delay)</h5>
+                <input type="number" id="num" class="form-control mb-3" placeholder="Ingresa un número">
+                <button class="btn btn-primary w-100" onclick="ejecutarAsync()">Calcular</button>
+                <div id="res" class="mt-4 h4 text-warning"></div>
+            </div>
+        </div>
+    </div>
+    <script src="async.js"></script>
+</body>
+</html>

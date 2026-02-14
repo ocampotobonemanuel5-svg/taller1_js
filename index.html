@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Datos - Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/index.html">CRUD Datos</a>
+
+       <div class="navbar-nav ms-auto">
+             <a class="nav-link" href="/index.html">Inicio (CRUD)</a>
+            <a class="nav-link" href="/src/futere/callbacks/callbacks.html">Callbacks</a>
+            <a class="nav-link active" href="/src/futere/promesas/promesas.html">Promises</a>
+            <a class="nav-link" href="/src/futere/async/async.html">Async/Await</a>
+            <a class="nav-link" href="/src/futere/destructuring/destructuring.html">Destructuring</a>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container">
+        <header class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h1 class="h3 m-0">CRUD Datos</h1>
+                <p class="text-secondary small">Feature-Based + Bootstrap 5 + localStorage</p>
+            </div>
+            <div>
+                <button class="btn btn-warning btn-sm me-2" onclick="exportarJSON()">Exportar JSON</button>
+                <button class="btn btn-danger btn-sm" onclick="borrarTodo()">Borrar todo</button>
+            </div>
+        </header>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card-custom">
+                    <h5>Registro de Datos</h5>
+                    <p class="text-secondary small mb-4">Registra o actualiza los datos.</p>
+                    <form id="formDatos">
+                        <input type="hidden" id="editIndex" value="-1">
+                        <div class="mb-3">
+                            <label class="form-label small">Nombres</label>
+                            <input type="text" id="nombre" class="form-control" placeholder="Ej: Juan Carlos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small">Documento</label>
+                            <input type="number" id="documento" class="form-control" placeholder="Ej: 102030" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Ej: juan@email.com" required>
+                        </div>
+                        <button type="submit" id="btnGuardar" class="btn btn-primary w-100 mt-2">Guardar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-dark table-hover border-secondary">
+                    <thead>
+                        <tr class="text-secondary">
+                            <th>Correo</th>
+                            <th>Nombre Completo</th>
+                            <th>Documento</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaDatos"></tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="/src/futere/crud/crud.js"></script>
+</body>
+</html>
