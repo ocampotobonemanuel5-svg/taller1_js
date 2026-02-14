@@ -5,25 +5,25 @@
     <title>Actividad 4: Promises</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
- <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../style.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="../../../index.html">CRUD Datos</a>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../index.html">CRUD Datos</a>
 
-        <div class="navbar-nav ms-auto">
-             <a class="nav-link" href="../../../index.html">Inicio (CRUD)</a>
-             <a class="nav-link" href="../callbacks/callbacks.html">Callbacks</a>
-            <a class="nav-link active" href="promesas.html">Promises</a>
-            <a class="nav-link" href="../async/async.html">Async/Await</a>
-            <a class="nav-link" href="../destructuring/destructuring.html">Destructuring</a>
+            <div class="navbar-nav ms-auto">
+                 <a class="nav-link" href="../../index.html">Inicio (CRUD)</a>
+                 <a class="nav-link" href="../callbacks/callbacks.html">Callbacks</a>
+                <a class="nav-link active" href="promesas.html">Promises</a>
+                <a class="nav-link" href="../async/async.html">Async/Await</a>
+                <a class="nav-link" href="../destructuring/destructuring.html">Destructuring</a>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     <div class="container">
-        <div class="card-custom">
+        <div class="card-custom p-4 border border-secondary rounded bg-dark">
             <h2>Actividad 4: Promises</h2>
             <p class="text-secondary">
                 <strong>Descripción:</strong> Una promesa es un objeto que representa la terminación o el fracaso de una operación asíncrona. Permite encadenar operaciones y manejar errores de forma limpia.
@@ -32,11 +32,13 @@
             
             <div class="col-md-6 mx-auto text-center mt-4">
                 <h5>Validador de Vocales</h5>
-                <input type="text" id="texto" class="form-control mb-3" placeholder="Escribe algo...">
+                <input type="text" id="texto" class="form-control mb-3 bg-dark text-white border-secondary" placeholder="Escribe algo...">
                 <button class="btn btn-primary w-100" onclick="procesar()">Validar Final</button>
+                <div id="res" class="mt-4 h5 text-success"></div>
             </div>
         </div>
     </div>
+
     <script src="promesas.js"></script>
 </body>
 </html>
